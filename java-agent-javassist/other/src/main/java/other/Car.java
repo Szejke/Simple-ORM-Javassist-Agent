@@ -3,7 +3,6 @@ package other;
 import agent.OneToOne;
 
 public class Car extends Home {
-    @OneToOne( tableName = "Home")
     int engine;
     String model;
 
