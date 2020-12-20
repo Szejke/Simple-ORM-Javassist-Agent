@@ -13,7 +13,7 @@ public class DataBase {
 
     public Connection conn = null;
 
-    // połączenie
+
     public void connection() {
         try {
             Class.forName("org.postgresql.Driver");
@@ -27,7 +27,6 @@ public class DataBase {
             e.printStackTrace();
         }
     }
-// tworzenie nowej tabeli
     public void createNewTable(String nameTable, ArrayList filed) {
         String sqlFilds = "";
         for (Object item : filed) {
@@ -43,7 +42,6 @@ public class DataBase {
             e.printStackTrace();
         }
     }
-//usuwanie tabeli
     public void dropDatabase(String nameTable) {
         String sql = "DROP TABLE IF EXISTS " + nameTable + ";";
         System.out.println(sql);
@@ -85,7 +83,6 @@ public class DataBase {
         }
     }
 
-//insert dla tabeli
     public void insertDatabase(String nameTable, ArrayList arg, String type) {
 
         String arguments = "";

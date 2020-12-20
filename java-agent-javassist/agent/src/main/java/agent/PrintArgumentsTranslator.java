@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-// Klasa nie używana lecz obrazująca wywoływania po każdej metodzie
+
 public class PrintArgumentsTranslator implements Translator {
 
     public static ArrayList listObject = new ArrayList();
